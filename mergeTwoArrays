@@ -1,0 +1,13 @@
+function mergeArrays(myArray, alicesArray) {
+
+  // Combine the sorted arrays into one large sorted array
+  // Input: 2 sorted arrays
+    // Join the two arrays and re-sort into order
+  // Output: 1 sorted array
+  
+  let result = myArray.concat(alicesArray);
+
+  result.sort((a, b) =>  a < b ? -1: 1)
+
+  return result;
+}
